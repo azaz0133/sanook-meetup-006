@@ -5,10 +5,11 @@ jobs:
       - image: circleci/node:8-browsers
 
 
-    working_directory: ~/ci-start
+    working_directory: ~/repo/ci-start
 
     steps:
       - checkout
+          path: ~/repo
 
       - restore_cache:
           keys:
