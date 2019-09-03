@@ -8,7 +8,7 @@ jobs:
     working_directory: ~/repo/ci-start
 
     steps:
-      - checkout
+      - checkout:
           path: ~/repo
 
       - restore_cache:
